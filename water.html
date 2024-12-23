@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Reminder App</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <h1>💧 Water Reminder App</h1>
+      <p>Set your daily goal and track your hydration!</p>
+      <form id="goalForm">
+        <label for="goal">Daily Goal (Liters):</label>
+        <input type="number" id="goal" placeholder="e.g., 2.0" required>
+        <button type="submit">Set Goal</button>
+      </form>
+
+      
+      <div id="progressSection" style="display: none;">
+        <h2>Track Your Intake</h2>
+        <p id="goalDisplay"></p>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <form id="intakeForm">
+          <label for="intake">Log Water Intake (ml):</label>
+          <input type="number" id="intake" placeholder="e.g., 250" required>
+          <button type="submit">Log Intake</button>
+        </form>
+        <p id="progressText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

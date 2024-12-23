@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;}
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #333;
+           
+        
+
+        }
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+          }
+          
+          .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+          .login-container button {
+            background: #0072ff;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+          }
+          .login-container button:hover {
+            background: #0056b3;
+          }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <form action="">
+        <input type="email" placeholder="email here" required id="useremail">
+        <input type="password" placeholder="password here" required id="userpswd">
+        <button id="login">login</button>
+    </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

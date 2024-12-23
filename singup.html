@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #497c8a, #0072ff);
+      color: #333;
+    }
+    .signup-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .signup-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .signup-container button {
+      background:blue;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    .signup-container button:hover {
+      background:lightseagreen;
+    }
+  </style>          
+</head> 
+<body>
+  <div class="signup-container">
+    <form action="">
+      <input type="text" placeholder="name here" id="username" required>
+      <input type="email" placeholder="enter email here" id="useremail" required>
+      <input type="password" placeholder="enter password here" id="userpswd" required>
+      <button id="signup">sign up</button>
+
+    </form>
+    <span id="nameerror"></span>
+    <span id="pswderror"></span>
+    <span id="emailerror"></span>
+  </div>
+  <script src="./signup.js"></script>
+</body>
+
+</html>
